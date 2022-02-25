@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\ksy0095.github.io"
   ],
-  "SelectedNode": "\\ksy0095.github.io\\_config.yml",
+  "SelectedNode": "\\.github\\workflows\\jekyll.yml",
   "PreviewInSolutionExplorer": false
 }
