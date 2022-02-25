@@ -1,0 +1,6 @@
+
+no console, one file
+pyinstaller -w -F --icon=./mp3.ico --add-data="ffmpeg.exe;./" PyYouTubeDownloader.py
+
+no console, folder type
+pyinstaller -w --icon=./mp3.ico --add-data="ffmpeg.exe;./" PyYouTubeDownloader.py
