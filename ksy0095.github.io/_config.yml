@@ -25,46 +25,29 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ksy0095.github.io/ksy0095.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ksy0095.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  ksy0095/ksy0095.github.io
 
 # Assets
 sass:
-  css_dir: assets/main
-  scass_dir: assets/main.css.map
-  #sass_dir: assets/
+  #sass_dir: assets
   style: compressed
 
 # Build settings
 theme: jekyll-theme-clean-blog
-#remote_theme: jekyll-theme-clean-blog
+#remote_theme: jekyll-theme-cayman
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 #future: true
 
 # Build
 markdown: kramdown
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: []
-
-exclude:
-  - site
-  - vendor
-  - Gemfile.lock
-  - Gemfile
-  - tools
-  - docs
-  - README.md
-  - LICENSE
+#post: _posts
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -74,12 +57,17 @@ exclude:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-#exclude:
+exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
-#  - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
+#   - _posts
+#   - assets
+#   - _site 
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - vendor/bootstrap
+   - vendor/startbootstrap-clean-blog
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/

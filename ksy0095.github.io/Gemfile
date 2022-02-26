@@ -36,3 +36,11 @@ gem 'jekyll-admin', group: :jekyll_plugins
 gem "jekyll-theme-clean-blog", "~> 4.0"
 
 gem "jekyll-theme-cayman", "~> 0.2.0"
+
+gem "backports", "~> 3.23"
+
+gem "jekyll-paginate", "~> 1.1"
+
+gem "jekyll-gist", "~> 1.5"
+
+gem "jekyll-sitemap", "~> 1.4"
