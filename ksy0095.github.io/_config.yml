@@ -31,12 +31,13 @@ github_username:  ksy0095/ksy0095.github.io
 
 # Assets
 sass:
-  sass_dir: assets/main
+  css_dir: assets/main
+  scass_dir: assets/main.css.map
   #sass_dir: assets/
   style: compressed
 
 # Build settings
-#theme: jekyll-theme-clean-blog
+theme: jekyll-theme-clean-blog
 #remote_theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
@@ -56,6 +57,7 @@ compress_html:
     envs: []
 
 exclude:
+  - site
   - vendor
   - Gemfile.lock
   - Gemfile
