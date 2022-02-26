@@ -31,13 +31,13 @@ github_username:  ksy0095/ksy0095.github.io
 
 # Assets
 sass:
-  sass_dir: _sass
+  sass_dir: assets/css
   #sass_dir: assets/
   style: compressed
 
 # Build settings
 #theme: jekyll-theme-clean-blog
-remote_theme: jekyll-theme-clean-blog
+#remote_theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
 
@@ -46,6 +46,23 @@ plugins:
 # Build
 markdown: kramdown
 
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+exclude:
+  - vendor
+  - Gemfile.lock
+  - Gemfile
+  - tools
+  - docs
+  - README.md
+  - LICENSE
 
 # Exclude from processing.
 # The following items will not be processed, by default.
