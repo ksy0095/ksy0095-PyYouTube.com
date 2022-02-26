@@ -34,3 +34,5 @@ gem "webrick", "~> 1.7"
 gem 'jekyll-admin', group: :jekyll_plugins
 
 gem "jekyll-theme-clean-blog", "~> 4.0"
+
+gem "jekyll-theme-cayman", "~> 0.2.0"
