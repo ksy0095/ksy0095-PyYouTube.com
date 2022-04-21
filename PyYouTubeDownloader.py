@@ -121,18 +121,18 @@ class MainClass(QMainWindow,QWidget,DownYouTube.Ui_MainWindow):
         url = self.tbx_URL.text()
         yt = YouTube(url)
         yt.register_on_progress_callback(self.ProgressBar)
+        yt_streams_mp4=yt.streams.filter(adaptive=True,file_extension='mp4').first()
 
         try:
             if yt.streams.get_by_itag(137):
                 QMessageBox.information(self,"Notice","1080p resolution\n continue the download?",QMessageBox.Ok)
                 if QMessageBox.Ok:
-                    yt_streams_mp4 = yt.streams.filter(adaptive=True,file_extension='mp4').first()
+                    yt_streams_mp4
 
             else:
                 QMessageBox.information(self,"Notice","Load Failed resolution 720p\n continue the download?",QMessageBox.Ok)
                 if QMessageBox.Ok:
-                    yt_streams_mp4 = yt.streams.filter(progressive=True,file_extension='mp4')\
-                     .first()
+                    yt_streams_mp4
         except:
             pass
 
